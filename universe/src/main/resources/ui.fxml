@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="306.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.saygindogu.universe.SimpleUIController">
+   <FlowPane prefHeight="200.0" prefWidth="200.0">
+      <children>
+          <Label fx:id="label" alignment="CENTER" prefHeight="116.0" prefWidth="205.0" text="Initial Stage" textAlignment="CENTER">
+            <font>
+               <Font name="System Italic" size="40.0" />
+            </font>
+            <textFill>
+               <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.06080000102519989" green="0.2206171154975891" blue="0.7599999904632568" />
+                        </color>
+                     </Stop>
+                     <Stop offset="0.263653483992467">
+                        <color>
+                           <Color red="0.06080000102519989" green="0.2206171154975891" blue="0.7599999904632568" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.6353557705879211" green="0.9210526347160339" blue="0.68773353099823" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </RadialGradient>
+            </textFill>
+         </Label>
+          <Button fx:id="showButton" alignment="CENTER" contentDisplay="CENTER" disable="true" prefHeight="106.0" prefWidth="164.0" text="Show" textAlignment="CENTER" textFill="#b94747">
+            <font>
+               <Font size="40.0" />
+            </font>
+            <effect>
+               <ColorAdjust />
+            </effect>
+         </Button>
+          <Button fx:id="simulateButton" defaultButton="true" prefHeight="102.0" prefWidth="240.0" text="Simulate" textAlignment="CENTER" textFill="#5ed757">
+            <font>
+               <Font size="40.0" />
+            </font>
+            <effect>
+               <Glow />
+            </effect>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Button>
+      </children>
+   </FlowPane>
+   <FlowPane prefHeight="29.0" prefWidth="612.0">
+      <children>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Filename" />
+          <TextField fx:id="fileName" prefWidth="150.0" text="history.txt" />
+      </children>
+   </FlowPane>
+   <FlowPane prefHeight="21.0" prefWidth="612.0">
+      <children>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Iterations" />
+          <TextField fx:id="iterations" prefWidth="150.0" text="1000" />
+      </children>
+   </FlowPane>
+    <CheckBox fx:id="benchmark" text="Bencmarking Run" />
+   <ProgressBar fx:id="progressbar" prefWidth="1000.0" progress="0.0" />
+    <Button fx:id="abortButton" prefWidth="1000.0" text="Abort" />
+    <Text fx:id="interactionIndicator" text="0"/>
+</VBox>
