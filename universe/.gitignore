@@ -1,6 +1,3 @@
-
-### START OF SPRING INITIALIZER GENERADED GITIGNORE
-
 HELP.md
 .gradle
 build/
@@ -38,8 +35,6 @@ out/
 
 ### VS Code ###
 .vscode/
-
-## END
 
 # Created by https://www.toptal.com/developers/gitignore/api/kotlin,intellij,gradle
 # Edit at https://www.toptal.com/developers/gitignore?templates=kotlin,intellij,gradle

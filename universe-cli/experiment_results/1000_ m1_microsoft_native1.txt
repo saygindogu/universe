@@ -1,0 +1,2 @@
+Max Particle Count: 319
+Elapsed Time: 1.016646792 secs

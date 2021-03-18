@@ -23,5 +23,7 @@ You can find the results of this machine in the files with suffix `rosetta`
 
 #### Microsoft aarch64 JDK for M1 chips ( native )
 
+Link to the [repo](https://github.com/microsoft/openjdk-aarch64/releases/tag/16-ea%2B10-macos)
+
 Jar is created with the default JDK. Run the jar with the native JDK in the tests.
 You can find the results of this machine in the files with suffix `rosetta`
