@@ -58,7 +58,7 @@ class Simulator(val space: Space, val interactions: List<Interaction>, val selfI
         val elapsed = measureNanoTime {
             if (benchmarking) dryRun(iterations, callback) else recordedRun(iterations, callback)
         }
-        file.write("Max Particle Count: ${statistics.maxParticleCount}".toByteArray())
+        file.write("Max Particle Count: ${statistics.maxParticleCount}\n".toByteArray())
         file.write("Elapsed Time: ${elapsed / 1e9} secs".toByteArray())
         file.close()
         executor.shutdown()
